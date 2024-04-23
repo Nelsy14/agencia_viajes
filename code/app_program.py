@@ -11,6 +11,7 @@ def fnt_limpiar():
 
 
 def fnt_agente(op):
+    global sw
     fnt_limpiar()
     if op == '1':
         print('<<< AGREGAR VIAJERO >>>')
@@ -36,6 +37,8 @@ def fnt_agente(op):
             for i in list_viajeros:
                 print(i)
             input('Presione <ENTER>  para continuar...')
+    elif op == '3':
+        sw == False
 
 
 while sw == True:
